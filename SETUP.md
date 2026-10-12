@@ -44,6 +44,7 @@ Install qmd (pi-memory's memory backend) and make it download the re-ranker and 
 
 - Install the agent-browser skill: `npx skills add vercel-labs/agent-browser -g -a pi`
 - Install find-skills: `npx skills add vercel-labs/skills --skill find-skills -g -a pi`
+- Install bro: `npx skills add backnotprop/pstack --skill bro -g -a pi`
 
 ## Keybindings
 
