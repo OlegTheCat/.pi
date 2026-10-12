@@ -17,7 +17,14 @@ pi install npm:@juicesharp/rpiv-ask-user-question
 
 ## pi-memory
 
-Install qmd (pi-memory's memory backend) and make it download the re-ranker and re-worder models.
+Install qmd (pi-memory's memory backend) and make it download the re-ranker and re-worder models:
+
+```
+npm install -g @tobilu/qmd
+qmd pull
+```
+
+The `pi-memory` qmd collection is created automatically at first session start — no manual `qmd collection add`.
 
 ## pi-background-tasks patches
 
@@ -45,6 +52,16 @@ Install qmd (pi-memory's memory backend) and make it download the re-ranker and 
 - Install the agent-browser skill: `npx skills add vercel-labs/agent-browser -g -a pi`
 - Install find-skills: `npx skills add vercel-labs/skills --skill find-skills -g -a pi`
 - Install bro: `npx skills add backnotprop/pstack --skill bro -g -a pi`
+
+Note: `-a pi` installs a skill into a vendor-neutral location ~/.agents/skills - that's expected, don't move them.
+
+## Settings
+
+Merge into `agent/settings.json`:
+
+```json
+"tuiMode": "regular"
+```
 
 ## Keybindings
 
