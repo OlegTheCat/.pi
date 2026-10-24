@@ -1,4 +1,4 @@
-# Locate the transcript
+# Resolve the scope
 
 Resolve the `<from>` argument to a boundary record, then work with the suffix of the active branch from that record to now. Don't review it yet.
 
