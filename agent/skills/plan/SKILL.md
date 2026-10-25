@@ -17,7 +17,7 @@ You should build your plan incrementally by writing to or editing this file.
 
 ## Plan Workflow
 
-If the scratchpad tool is available, use it to track these six stages: at the start, add one scratchpad item per stage (e.g. `plan <task-slug>: phase 1 Investigate`), then mark each stage done in the scratchpad as you go.
+If todo-list tools are available, use them to track these six stages. Create all todo items for each stage upfront, and mark stages done as you go.
 
 Scale the depth to the task. Keep all six phases, but use a brief pass for a truly trivial task (typo fixes, single-line changes, simple renames). Do not manufacture questions, alternatives, or architectural work just to fill the workflow.
 
