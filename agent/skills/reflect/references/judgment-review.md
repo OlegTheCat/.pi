@@ -14,7 +14,6 @@ Review the conversation for:
 - Skill use: did an invoked skill help, give poor guidance, or fail to address a real situation? Was a relevant skill available but not used, or used too late?
 - Verification: was success shown by a check, test, or output in the conversation, or only claimed? An unverified outcome is a gap in evidence, not proof that the work failed.
 - Unacknowledged corrections: did the user correct something that the agent never acknowledged or acted on?
-- Surprises: what in this conversation didn't fit any category above, yet feels worth remembering?
 
 State the lesson as a rule a future agent can act on, not a description of what happened. Keep technical commands and tool recipes for the tooling review.
 

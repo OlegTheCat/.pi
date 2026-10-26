@@ -1,6 +1,6 @@
 ---
 name: plan
-description: Create a well-researched implementation plan without executing it or using subagents. Use when the user requests planning mode, a plan before coding, or an implementation proposal for a feature, bug fix, or refactor. Investigate code, clarify requirements, design and review an approach, write a plan, then wait for explicit approval.
+description: Create a well-researched implementation plan without executing it or using subagents. Use when the user requests planning mode, a plan before coding, or an implementation proposal for a feature, bug fix, or refactor. Investigate code, clarify requirements, design an approach, write and review a plan, then wait for explicit approval.
 ---
 
 # Plan
@@ -9,7 +9,7 @@ Plan, don't implement. Follow repository guidance; wait for explicit approval be
 
 ## Plan File Info
 
-If the user designated a plan file, use it. Otherwise, designate an absolute path `/tmp/pi-plan-<descriptive-task-slug>.md` and tell the user that path before writing. Reuse the same file when refining this plan.
+If the user designated a plan file, use it. Otherwise, use `pi-plan-<descriptive-task-slug>.md` in the root of the current project or repository. Resolve it to an absolute path and tell the user that path before writing. Reuse the same file when refining this plan.
 
 You should build your plan incrementally by writing to or editing this file.
 
@@ -53,17 +53,7 @@ Consider other approaches when the choice matters:
 
 Recommend one approach and briefly explain why. Prefer existing patterns and keep the change as small as practical. Work out what to do first, what depends on what, what could go wrong, and how to check that it works.
 
-### Phase 4: Review
-
-Goal: Check that the plan makes sense and matches what the user wants.
-
-1. Reread the key files. Check that the proposed changes fit how the code actually works.
-2. Check the plan against the user's original request.
-3. Look for unusual cases, changes that could break existing behavior, errors that need handling, missed requirements, needless complexity, and work outside the request.
-4. Make sure the checks cover the desired behavior and things the change could break, not just cases where everything goes well.
-5. Use the question tool to clear up any remaining questions. Return to design if the answers change the approach.
-
-### Phase 5: Write
+### Phase 4: Write
 
 Goal: Write your final plan to the plan file.
 
@@ -93,6 +83,16 @@ Any assumptions or things blocking progress.
 ## Verification
 Specific tests/checks and end-to-end scenarios with expected outcomes.
 ```
+
+### Phase 5: Review
+
+Goal: Make sure the plan is correct and does what the user asked.
+
+1. Read the plan and check it against the code and the user's request.
+2. Check that the plan covers everything the user asked for. Look for unusual cases, things that could break, errors to handle, needless complexity, and work outside the request.
+3. Make sure the tests cover both what should work and what could go wrong.
+4. Use the question tool if anything important is still unclear. If an answer changes the approach, rethink it and update the plan.
+5. Fix the plan before asking for approval.
 
 ### Phase 6: Stop
 

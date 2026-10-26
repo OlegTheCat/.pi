@@ -20,7 +20,7 @@ Otherwise the argument is `<from>`: a free-form description of the starting poin
 
 ## Reflection File
 
-If the user designated a reflection file, use it. Otherwise, designate an absolute path in a durable location — prefer a project-local reflect directory (e.g. `<project>/cases/reflect/pi-reflect-<descriptive-session-slug>.md`) or a user-level directory; avoid ephemeral paths like /tmp so findings survive restarts — and tell the user that path before writing. Build the findings incrementally in that file.
+If the user designated a reflection file, use it. Otherwise, designate an absolute path `/tmp/pi-reflect-<descriptive-session-slug>.md` and tell the user that path before writing. Build the findings incrementally in that file.
 
 ## Workflow
 
