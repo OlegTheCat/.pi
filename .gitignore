@@ -21,3 +21,6 @@
 !agent/
 !agent/skills/
 !agent/skills/**
+!agent/extensions/
+!agent/extensions/pi-status/
+!agent/extensions/pi-status/**
