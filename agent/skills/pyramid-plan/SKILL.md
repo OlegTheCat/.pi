@@ -14,7 +14,7 @@ Use the user's chosen file or `pi-plan-<task-slug>.md` in the project root. Shar
 ## Pyramid Layers
 
 - **Intent:** What outcome do we want, what stays unchanged, and what's out of scope? Keep it to a short paragraph.
-- **Approach:** How should we achieve it, and what important choices or trade-offs are involved? Aim for up to 3 medium paragraphs and/or 3-6 bullet points, expand only if the task's scope requires it.
+- **Approach:** How should we achieve it, and what important choices or trade-offs are involved? Aim for up to 3 medium paragraphs and/or 3-6 bullet points, expand only if the task's scope requires it. Keep an additional newline between paragraphs/bullet points for better readability.
 - **Technical:** What exactly changes, in which files, and how do we verify it? Include relevant edge cases and tests.
 
 Each layer adds detail rather than repeating the layers above. Keep the plan digestible; it is not a transcript of your research.
